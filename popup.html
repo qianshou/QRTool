@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二维码便捷工具</title>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+</head>
+<body>
+    <div class="am-tabs" style="width: 560px;height: 350px;" id="doc-my-tabs">
+        <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active"><a href="#tab1">当前页面</a></li>
+            <li><a href="#tab2">自定义文本</a></li>
+        </ul>
+
+        <div class="am-tabs-bd">
+            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                <p id="current_url"></p>
+               <div id="current_qr"></div>
+            </div>
+            <div class="am-tab-panel am-fade" id="tab2">
+                <div class="am-g">
+                    <div class="am-u-sm-10"><input type="text" class="am-form-field am-radius" id="custom_text"></div>
+                    <div class="am-u-sm-2"><button id="create" class="am-btn am-btn-primary am-radius">生成</button></div>
+                </div>
+
+                <div class="am-g am-margin-top-sm">
+                    <div class="am-u-sm-10">
+                        <div id="custom_qr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascript/jquery.min.js"></script>
+<script src="javascript/amazeui.min.js"></script>
+<script src="javascript/jquery.qrcode.js"></script>
+<script src="javascript/qrcode.js"></script>
+<script src="javascript/index.js"></script>
+</html>
