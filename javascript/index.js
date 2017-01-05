@@ -8,14 +8,14 @@ $(function() {
 })
 
 //chrome扩展获得当前url，并转为二维码
-// chrome.tabs.query({
-//     active: true,
-//     currentWindow: true
-// }, function(tabs){
-//     var url = tabs[0].url;
-//     $('#current_url').text(url);
-//     createQR('current_qr',url);
-// });
+chrome.tabs.query({
+    active: true,
+    currentWindow: true
+}, function(tabs){
+    var url = tabs[0].url;
+    $('#current_url').text(url);
+    createQR('current_qr',url);
+});
 
 //生成自定义二维码
 $("#create").click(function () {
